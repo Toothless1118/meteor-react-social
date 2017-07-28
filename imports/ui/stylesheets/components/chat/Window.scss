@@ -1,0 +1,62 @@
+.chat-window {
+  position: relative;
+  .messages {
+    overflow: auto;
+    .no-messages {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: flex;
+        padding: 10px;
+        .image {
+          width: 25px;
+          height: 25px;
+          background-size: cover;
+          background-position: center center;
+          border-radius: 50px;
+        }
+        .info {
+          padding: 0 10px;
+          .username {
+            font-size: 14px;
+            line-height: 1;
+            width: 90px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            a {
+              color: $greyFont;
+            }
+          }
+          .date {
+            font-size: 10px;
+            color: #999;
+            line-height: 1;
+          }
+        }
+        .message {
+          font-size: 13px;
+          line-height: 1;
+          align-self: center;
+          padding: 5px;
+          border-radius: 5px;
+          background: #f1f1f1;
+          word-break: break-all;
+        }
+        &.right {
+          flex-direction: row-reverse;
+          .info {
+            text-align: right;
+          }
+          .message {
+            background: rgba(32, 149, 208, .3);
+          }
+        }
+      }
+    }
+  }
+}

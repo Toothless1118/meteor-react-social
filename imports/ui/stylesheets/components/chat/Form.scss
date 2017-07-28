@@ -1,0 +1,31 @@
+.chat-form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  form {
+    display: flex;
+    .form-group {
+      margin: 0;
+      width: 100%;
+    }
+    input.form-control {
+      padding: 5px 10px;
+      border: none;
+      border-top: 1px solid $primary;
+      font-size: 14px;
+      height: auto;
+      font-weight: normal;
+      margin: 0;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    button {
+      background: $primary;
+      color: #fff;
+      border: none;
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

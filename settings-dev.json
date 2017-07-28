@@ -1,0 +1,35 @@
+{
+  "public": {
+    "S3": {
+      "profile_thumb_img": "",
+      "post_thumb_img": ""
+    },
+    "stripe": {
+      "key": ""
+    },
+    "braintree": {
+      "publicKey": ""
+    },
+    "subscription": {
+      "initialCost": 0.99,
+      "monthlyCost": 29.95
+    }
+  },
+  "S3": {
+    "key": "",
+    "secret": "",
+    "bucket": "",
+    "url": ""
+  },
+  "stripe": {
+    "key": ""
+  },
+  "braintree": {
+    "merchantId": "",
+    "privateKey": ""
+  },
+  "drip": {
+    "accountId": "",
+    "apiToken": ""
+  }
+}

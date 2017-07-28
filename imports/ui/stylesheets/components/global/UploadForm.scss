@@ -1,0 +1,119 @@
+.upload-form{
+  .upload-drop-zone {
+    height: 150px;
+    margin-bottom: 20px;
+    color: #ccc;
+    border: 2px dashed #ccc;
+    text-align: center;
+    transition: .5s color, .5s border-color;
+    position: relative;
+    &.active {
+      color: $green;
+      border-color: $green;
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .processed-files{
+    margin-bottom: 20px;
+    .file{
+      background: #fff;
+      position: relative;
+      box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+      padding-bottom: 5px;
+      border-radius: 3px;
+      margin: 15px 0;
+      .image{
+        height: 150px;
+        background-size: cover;
+        position: relative;
+        cursor: move;
+      }
+      .remove-btn{
+        position: absolute;
+        color: #fff;
+        top: 10px;
+        right: 5px;
+        font-size: 26px;
+        &:hover{
+          color: $red;
+        }
+      }
+      input{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: transparent;
+        margin-bottom: 0;
+        height: auto;
+        font-size: 12px;
+        text-align: center;
+      }
+      .progress-bar{
+        height: 5px;
+        border-radius: 0 0px 3px 3px;
+        transition: .5s background-color, .5s width;
+      }
+      &.uploaded{
+        .progress-bar{
+          background-color: $green;
+        }
+      }
+      &.failed{
+        .progress-bar{
+          background-color: $red;
+          width: 100% !important;
+        }
+      }
+      &.uploading{
+        .progress-bar{
+          background-color: $blue;
+        }
+      }
+      &.queued{
+        .progress-bar{
+          background-color: $blue;
+        }
+      }
+    }
+    .draggable{
+      touch-action: none;
+      -ms-touch-action: none;
+      &.sortable-chosen{
+      }
+      &.sortable-ghost {
+        opacity: .2;
+      }
+    }
+  }
+}
+
+
+.edit-profile-form, .register-login-tabs {
+  .upload-form {
+    width: 200px;
+    margin: 0 auto;
+    .upload-drop-zone {
+      height: 200px;
+      background-image: url('https://s3.amazonaws.com/myinslim/subfolder/default.png');
+      background-size: cover;
+    }
+    &.has-files.single {
+      .upload-drop-zone {
+        display: none;
+      }
+      .processed-files {
+        .row {
+          .draggable {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

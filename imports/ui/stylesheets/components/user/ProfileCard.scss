@@ -1,0 +1,37 @@
+.profile-card {
+  border: 1px solid $greyBorder;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 0;
+  .image {
+    border-radius: 10%;
+    height: 155px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .name {
+    margin: 20px 0 10px;
+    color: #5A7391;
+    font-weight: bold;
+  }
+  .last-login {
+    p {
+      color: #5A7391;
+      margin-bottom: 0;
+    }
+    span {
+      text-transform: uppercase;
+      color: #5b9bd1;
+      font-weight: bold;
+      font-size: 1.2rem;
+      &.online {
+        color: #BF6067;
+      }
+    }
+  }
+  .btn {
+    margin-top: 15px;
+  }
+}
+

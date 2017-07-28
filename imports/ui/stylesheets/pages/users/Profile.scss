@@ -1,0 +1,83 @@
+.profile-page {
+  margin: -10px;
+  .profile-page-goal {
+    color: #4F4F4F;
+    text-align: center;
+    .wrapper {
+      margin: 0 auto;
+      max-width: 600px;
+      .weight {
+        font-size: 24px;
+        color: #4F4F4F;
+        font-weight: bold;
+      }
+      .date {
+        display: block;
+      }
+      .circular-progress {
+        svg {
+          width: 80%;
+          margin-top: 20px;
+        }
+      }
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .update, .weight-edit-form {
+      a, button {
+        font-size: 12px;
+        margin: 0 2px;
+      }
+    }
+    .update {
+      a {
+        display: block;
+      }
+    }
+    .weight-edit-form {
+      .form-group {
+        margin: 0;
+      }
+      button {
+        padding: 0;
+        background: none;
+        color: #337ab7;
+      }
+    }
+  }
+  .tabs-wrapper {
+    .tab-content {
+      margin-top: 30px;
+    }
+    .nav-tabs {
+      width: 100%;
+      li {
+        a {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+  &.no-goals {
+    .tabs-wrapper {
+      .nav-tabs {
+        display: none;
+      }
+    }
+    .profile-stats {
+      margin-top: -1px!important;
+    }
+    .posts-list {
+      margin-top: 66px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .profile-page {
+    .tabs-wrapper {
+      margin-top: -67px;
+    }
+  }
+}

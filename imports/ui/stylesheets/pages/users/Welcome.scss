@@ -1,0 +1,29 @@
+.welcome-section {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin: 60px auto 0;
+  color: $greyFont;
+  p {
+    font-size: 18px;
+  }
+  span {
+    font-size: 22px;
+  }
+  .btn {
+    margin-top: 10px;
+  }
+
+  .weight-wrapper {
+    .form-group, span {
+      display: inline-block
+    }
+    span {
+      margin-left: 10px;
+    }
+  }
+  textarea {
+    height: 130px;
+    margin-top: 20px;
+  }
+}

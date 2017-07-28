@@ -1,0 +1,30 @@
+{
+  "appName": "test",
+  "appLocation": {
+    "local": "./",
+    "branch": "master"
+  },
+  "meteorSettingsLocation": "./settings.json",
+  "prebuildScript": "",
+  "meteorBuildFlags": "--architecture os.linux.x86_64 --server-only",
+  "env": {
+    "ROOT_URL": "",
+    "PORT": 80,
+    "MONGO_URL": "",
+    "HTTP_FORWARDED_COUNT": 1,
+    "MAIL_URL": ""
+  },
+  "server": {
+    "host": "",
+    "username": "",
+    "password": "",
+    "deploymentDir": "",
+    "loadProfile": "",
+    "nvm": {
+      "bin": "",
+      "use": ""
+    },
+    "exec_mode": "",
+    "instances": 1
+  }
+}

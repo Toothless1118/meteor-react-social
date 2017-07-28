@@ -1,0 +1,21 @@
+.comment-form {
+  border: 1px solid #e7e7e7;
+  border-top: none;
+  padding: 10px 20px;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  .form-group {
+    overflow: hidden;
+    float: left;
+    width: 80%;
+    margin: 0 1% 0 0;
+  }
+  input {
+    margin: 0;
+  }
+  button {
+    float: left;
+    width: 19%;
+  }
+}

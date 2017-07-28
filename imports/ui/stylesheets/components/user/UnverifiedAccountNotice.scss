@@ -1,0 +1,11 @@
+.unverified-account-notice {
+  background: rgb(255, 255, 192);
+  text-align: center;
+  margin: -10px -10px 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .unverified-account-notice {
+    margin: 0 0 10px 0;
+  }
+}

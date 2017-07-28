@@ -1,0 +1,9 @@
+.gallery {
+  img {
+    cursor: pointer;
+    transition: .5s opacity;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

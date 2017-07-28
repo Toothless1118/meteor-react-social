@@ -1,0 +1,38 @@
+.comments {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  .comment {
+    .panel-body {
+      padding-bottom: 0;
+    }
+    .comment-post {
+      margin: 10px 0;
+    }
+    .meta {
+      padding: 0;
+      font-size: 12px;
+      time {
+        i {
+          margin-right: 5px;
+        }
+      }
+      .author {
+        margin-left: 5px;
+      }
+    }
+    .btn {
+      float: right;
+    }
+    .actions {
+      font-size: 12px;
+      a {
+        margin-right: 5px;
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.post-form {
+  overflow: hidden;
+  .form-group {
+    margin-bottom: 0;
+  }
+  textarea {
+    font-size: 18px;
+    height: 90px;
+  }
+  .file-upload-btn {
+    color: #777;
+  }
+  .buttons {
+    overflow: hidden;
+  }
+}

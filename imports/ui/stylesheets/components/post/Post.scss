@@ -1,0 +1,140 @@
+.post-wrapper {
+  margin: 25px 0 50px;
+  .feed-post {
+    padding: 10px 10px 30px 10px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    .actions {
+      font-size: 12px;
+      margin-top: 10px;
+      a {
+        margin-right: 5px;
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+    .thumbnail {
+      margin-top: 10px;
+      img {
+        width: 100px;
+      }
+    }
+    .meta {
+      padding: 10px 0;
+      font-size: 12px;
+      time {
+        i {
+          margin-right: 5px;
+        }
+      }
+      .author {
+        margin-left: 5px;
+      }
+    }
+
+    .content {
+      word-break: break-all;
+      div {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &>.buttons {
+      position: absolute;
+      bottom: 0px;
+      right: 10px;
+      .like {
+        border-bottom: 0;
+        border-color: #e7e7e7;
+        i {
+          color: rgb(179, 47, 6);
+          margin-right: 5px;
+        }
+      }
+      .view-comments {
+        margin-right: 5px;
+        color: #777;
+      }
+    }
+  }
+  &.newGoal {
+    .feed-post, .comment-form {
+      border-color: $primary;
+    }
+  }
+  &.lostWeight {
+    .feed-post, .comment-form {
+      border-color: #d4ca00;
+    }
+    .feed-post {
+      height: 300px;
+      .graphic-wrapper {
+        background: url('/images/goal.png') no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        top: 40px;
+        height: calc(100% - 70px);
+        width: 80%;
+        left: 15%;
+      }
+      .graphic {
+        position: absolute;
+        width: 13%;
+        height: 65%;
+        left: 42.5%;
+        top: 40%;
+        text-align: center;
+        span {
+          font-size: 1.5rem;
+          color: #fff;
+          display: block;
+          line-height: 1;
+          &.amount {
+            font-size: 3rem;
+          }
+        }
+      }
+      .content {
+        display: none;
+      }
+      .meta {
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .post-wrapper {
+    &.lostWeight {
+      .feed-post {
+        .graphic-wrapper {
+          left: 0%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .post-wrapper {
+    &.lostWeight {
+      .feed-post {
+        .graphic {
+          top: 40%;
+          span {
+            font-size: 1.5rem;
+            &.amount {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

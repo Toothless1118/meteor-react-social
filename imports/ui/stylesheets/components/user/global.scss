@@ -1,0 +1,11 @@
+.online-status-badge {
+  width: 10px;
+  height: 10px;
+  background-color: #4F4F4F;
+  display: inline-block;
+  border-radius: 100%;
+  margin: 0 3px;
+  &.online {
+    background-color: #27AE60;
+  }
+}

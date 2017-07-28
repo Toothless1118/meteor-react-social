@@ -1,0 +1,55 @@
+.newsstand-feed {
+  word-break: break-all;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 4px;
+  padding: 10px;
+  position: fixed;
+  margin-right: 10px;
+  max-height: calc(100% - 300px);
+  overflow: auto;
+  &>.title {
+    font-size: 2rem;
+    color: $primary;
+  }
+  a {
+    cursor: pointer;
+    &.more {
+      margin-top: 10px;
+      display: block;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 10px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        .title {
+          color: #333;
+          .source {
+            color: #90949c;
+            word-break: keep-all;
+            &:before {
+              content: ' - ';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .newsstand-feed {
+    position: relative;
+    margin: 0 0 20px 0;
+  }
+}

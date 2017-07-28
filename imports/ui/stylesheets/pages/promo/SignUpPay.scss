@@ -1,0 +1,75 @@
+.payment-page {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  h1 {
+    font-size: 42px;
+    font-weight: lighter;
+  }
+  p {
+    font-size: 18px;
+    &.smaller {
+      font-size: 16px;
+      color: #777;
+      text-align: left;
+    }
+  }
+  .table-wrapper {
+    border: 3px dotted #cccaca;
+    padding: 5px 20px;
+  }
+  table {
+    width: 100%;
+    tr {
+      td, th {
+        padding: 3px;
+        text-align: right;
+        &:first-child {
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:last-child {
+          border-top: 1px solid #eee;
+        }
+      }
+    }
+    thead {
+      tr {
+        border-bottom: 1px solid #eee;
+      }
+    }
+  }
+
+  form {
+    button {
+      margin-top: 3px;
+    }
+    .help-block {
+      text-align: left;
+    }
+  }
+
+  .cards {
+    max-width: 200px;
+    margin: 10px 0;
+  }
+
+  .paypal-btn {
+    display: block;
+  }
+
+  .features {
+    h2 {
+      margin-top: 0;
+    }
+    p {
+      font-size: 14px;
+    }
+    img {
+      width: 70px;
+    }
+  }
+}

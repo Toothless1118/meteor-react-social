@@ -1,0 +1,35 @@
+.home-page {
+  .wrapper-home {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .sidebar {
+    width: 300px;
+    margin: 0 0 0 20px;
+  }
+}
+
+.mobile-home-nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  a {
+    display: block;
+    flex: 1;
+    padding: 10px 0;
+    background: #fff;
+    color: $primary;
+    text-align: center;
+    &.active {
+      background: $primary;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home-page {
+    display: flex;
+  }
+}
